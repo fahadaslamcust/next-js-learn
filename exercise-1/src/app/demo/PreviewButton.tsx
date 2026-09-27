@@ -18,7 +18,7 @@ export default function PreviewButton({item}: previewButtonProps) {
       <button onClick={() => setOpen(true)}>
         Preview
       </button>
-      {open && (
+      {open && 
         <dialog open>
           <p>username: {item.username}</p>
           <p>email: {item.email}</p>
@@ -27,7 +27,7 @@ export default function PreviewButton({item}: previewButtonProps) {
             Close
           </button>
         </dialog>
-      )}
+      }
     </div>
   );
 }
